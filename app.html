@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn" {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+    <script>
+      !(function (c, i, e, b) {
+        var _bid = 'demo';
+        var h = i.createElement('script');
+        var f = i.getElementsByTagName('script')[0];
+        h.type = 'text/javascript';
+        h.crossorigin = true;
+        h.onload = function () {
+          try {
+            c[b] ||
+              (c[b] = new c.wnlReporter({
+                bid: _bid,
+                plugins: [],
+                spa: true,
+              }));
+            c[b].installAll();
+          } catch (e) {
+            console.error('init wnlReporter fail', e);
+          }
+        };
+        f.parentNode.insertBefore(h, f);
+        h.src = e + '?app=' + _bid;
+      })(window, document, '//qiniu.other.cq-wnl.com/v1.0.3/wmsdk.min.js', '__wpk');
+    </script>
+  </body>
+</html>

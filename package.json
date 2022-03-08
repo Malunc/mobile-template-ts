@@ -1,0 +1,46 @@
+{
+  "name": "mobile-template-ts",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Renew",
+  "description": "H5业务页面快速开发框架,TypeScript版本",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate  && yarn babel",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "babel": "babel dist/_nuxt/  -d dist/_nuxt/",
+    "gen": "yarn build && ftp-deploy"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@wnl/share": "^0.0.4",
+    "@wnl/ui": "^1.4.12",
+    "@wnl/util": "^1.2.13",
+    "core-js": "^3.15.1",
+    "html2canvas": "^1.0.0-rc.4",
+    "image-preload": "^1.0.6",
+    "lib-flexible": "^0.3.2",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.15.7",
+    "nuxt-property-decorator": "^2.9.1",
+    "vant": "^2.12.22",
+    "vconsole": "^3.9.4"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "autoprefixer": "^9.8.6",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-import": "^1.13.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint-config-prettier": "^8.3.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "postcss-pxtorem": "^5.1.1",
+    "prettier": "^2.3.2"
+  }
+}
